@@ -9,19 +9,19 @@ get_header(); ?>
 
 		<div class="row">
 			<div id="main-header-text" class="large-7 large-offset-1 medium-8 medium-offset-1 columns">
-				<h1 style="color:<?php echo of_get_option('textcolorpicker'); ?>;"><?php echo of_get_option('header_text'); ?></h1>
+				<h1 style="color:<?php echo of_get_option('maintextcolorpicker'); ?>;"><?php echo of_get_option('header_text'); ?></h1>
 			</div>
 		</div>
 		<div class="row">
 			<div class="large-7 large-offset-1 medium-8 medium-offset-1 columns">
-				<p style="color:<?php echo of_get_option('textcolorpicker'); ?>;"><?php echo of_get_option('body_text'); ?></p>
+				<p style="color:<?php echo of_get_option('maintextcolorpicker'); ?>;"><?php echo of_get_option('body_text'); ?></p>
 			</div>
 		</div>
 
 		<div class="main-content-question row">
 
 			<div class="large-4 large-offset-1 medium-4 medium-offset-1 columns">
-				<p style="color:<?php echo of_get_option('textcolorpicker'); ?>;">Would you recommend us to your family and friends?</p>
+				<p style="color:<?php echo of_get_option('maintextcolorpicker'); ?>;">Would you recommend us to your family and friends?</p>
 			</div>
 				
 			<div class="large-6 medium-6 small-12 columns" id="review-buttons">

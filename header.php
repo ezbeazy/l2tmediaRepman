@@ -22,7 +22,12 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
-	<title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
+	<title>
+	<?php 
+		//wp_title( '|', true, 'right' ); bloginfo( 'name' ); 
+		echo of_get_option('site_title');
+	?>
+	</title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<!--[if lt IE 9]>
@@ -51,9 +56,9 @@
 	<div class="row">
 		<?php if ( get_header_image() ) : ?>
 		<div id="site-header" class="large-8 medium-7 small-12 columns">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+			<!--<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">-->
 				<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
-			</a>
+			<!--</a>-->
 		</div>
 		<?php  else :?>
 		<div class="large-8 medium-7 small-12 columns" >

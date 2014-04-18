@@ -1,7 +1,12 @@
 
 <div id="reviewBtns">
 
-<h2>REVIEW US ON</h2>
+<h2>
+<?php 
+$yesText = of_get_option('yes_text');
+echo $yesText;
+?>
+</h2>
 
 <!--get the value of the options array key-->
 
@@ -11,6 +16,7 @@
 	function get_the_value($key){
 
 	$reviewbtn = of_get_option($key);
+
 
 	$review_array = array(
 		'none' => 'none',

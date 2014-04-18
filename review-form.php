@@ -5,6 +5,7 @@
 			}	*/	
 	
 
+	$noText       = of_get_option('no_text');
 	$address      = of_get_option('form_emails');
 	$personName   = of_get_option('form_name');
 	$personPhone  = of_get_option('form_phone');
@@ -116,7 +117,7 @@
 
 		<form method="post" action="" id="submissionForm" class="the-form">
 
-		<h2>Please let us know how we could have improved your experience with us.</h2>
+		<h2><?php echo $noText ?></h2>
 
 		<div class="form-label">Name*</div>
 			<input name="custname" type="text" id="custname" value="<?=$custname;?>" /><br>
@@ -173,8 +174,8 @@
 		<br>
 
 		
-		<div class="form-label">City</div>
-		<input type="text" name="city" id="city" value="<?=$city;?>" />
+		<!--<div class="form-label">City</div>
+		<input type="text" name="city" id="city" value="<?=$city;?>" />-->
 
 		<div class="form-label">Review</div>
 		<textarea name="comments" rows="7"  id="comments"><?=$comments;?></textarea>

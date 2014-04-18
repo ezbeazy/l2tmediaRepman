@@ -109,6 +109,13 @@ function optionsframework_options() {
 		'type' => 'heading');
 
 	$options[] = array(
+		'name' => __('Site Title', 'options_check'),
+		'desc' => __('Title for website', 'options_check'),
+		'id' => 'site_title',
+		'std' => 'Site Title',
+		'type' => 'text');
+
+	$options[] = array(
 		'name' => __('Client Name', 'options_check'),
 		'desc' => __('Client name for SEO purposes', 'options_check'),
 		'id' => 'client_name',
@@ -196,11 +203,36 @@ function optionsframework_options() {
 		'type' => 'heading');
 
 	$options[] = array(
-		'name' => __('Choose Text Color', 'options_check'),
+		'name' => __('Choose Main Text Color', 'options_check'),
 		'desc' => __('Default #222', 'options_check'),
-		'id' => 'textcolorpicker',
+		'id' => 'maintextcolorpicker',
 		'std' => '',
 		'type' => 'color' );
+
+	$options[] = array(
+		'name' => __('Choose Footer Text Color', 'options_check'),
+		'desc' => __('Default #222', 'options_check'),
+		'id' => 'footertextcolorpicker',
+		'std' => '',
+		'type' => 'color' );
+
+	$options[] = array(
+		'name' => __('Review Text', 'options_check'),
+		'type' => 'heading');
+
+	$options[] = array(
+		'name' => __('Yes Text', 'options_check'),
+		'desc' => __('Text for the yes review button', 'options_check'),
+		'id' => 'yes_text',
+		'std' => 'REVIEW US ON',
+		'type' => 'textarea');
+
+	$options[] = array(
+		'name' => __('No Text', 'options_check'),
+		'desc' => __('Text for the no review button', 'options_check'),
+		'id' => 'no_text',
+		'std' => 'Please let us know how we could have improved your experience with us.',
+		'type' => 'textarea');
 
 	$options[] = array(
 		'name' => __('Review Buttons', 'options_check'),

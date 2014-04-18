@@ -15,7 +15,7 @@
 		<div class="footer">
 		<div class="large-7 medium-6 column">
 			<div class="footer-info">
-				<p style="color:<?php echo of_get_option('textcolorpicker'); ?>;"><?php echo of_get_option('footer_text'); ?></p>
+				<p style="color:<?php echo of_get_option('footertextcolorpicker'); ?>;"><?php echo of_get_option('footer_text'); ?></p>
 			</div>
 		</div>
 
@@ -24,24 +24,32 @@
 
 			    <div id="footer-links">          
 				<span class="social-link">
+					<?php if (of_get_option('facebook_link') !== 'Default Value' && of_get_option('facebook_link') != NULL){ ?>
 					<a href="<?php echo of_get_option('facebook_link'); ?>" target="_blank" onClick="_gaq.push(['_trackEvent', 'Social', 'Clicks', 'Facebook']);">
 						<img src="<?php echo get_template_directory_uri() ?>/img/facebook.png" border="0" class="icons">
 					</a>
+					<?php } ?>
 				</span>
 				<span class="social-link">
+					<?php if (of_get_option('twitter_link') !== 'Default Value' && of_get_option('twitter_link') != NULL){ ?>
 					<a href="<?php echo of_get_option('twitter_link'); ?>" target="_blank" onClick="_gaq.push(['_trackEvent', 'Social', 'Clicks', 'Twitter']);">
 						<img src="<?php echo get_template_directory_uri() ?>/img/twitter.png" border="0" class="icons">
 					</a>
+					<?php } ?>
 				</span>
 				<span class="social-link">
+					<?php if (of_get_option('youtube_link') !== 'Default Value' && of_get_option('youtube_link') != NULL){ ?>
 					<a href="<?php echo of_get_option('youtube_link'); ?>" target="_blank" onClick="_gaq.push(['_trackEvent', 'Social', 'Clicks', 'Youtube']);">
 						<img src="<?php echo get_template_directory_uri() ?>/img/youtube.png" border="0" class="icons">
 					</a>
+					<?php } ?>
 				</span>
 				<span class="social-link">
+					<?php if (of_get_option('blog_link') !== 'Default Value' && of_get_option('blog_link') != NULL){ ?>
 					<a href="<?php echo of_get_option('blog_link'); ?>" target="_blank" onClick="_gaq.push(['_trackEvent', 'Social', 'Clicks', 'Blog']);">
 						<img src="<?php echo get_template_directory_uri() ?>/img/blog.png" border="0" class="icons">
 					</a>
+					<?php } ?>
 				</span>
 				<span class="social-link GooglePlusOff">
 					<g:plusone annotation="none"></g:plusone>
