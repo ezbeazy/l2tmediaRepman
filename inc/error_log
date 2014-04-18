@@ -1,0 +1,1 @@
+[26-Feb-2014 22:49:34] PHP Fatal error:  Call to undefined function  add_action() in /home2/l2tmedia/public_html/wp-content/themes/l2tmediaRepman/inc/custom-header.php on line 48
