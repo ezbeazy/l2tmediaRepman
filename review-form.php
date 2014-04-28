@@ -75,7 +75,7 @@
 		 					
     $msg = $e_body . $e_name . $e_email . $e_phone . $e_who . $e_overall . $e_customerservice . $e_qualitywork . $e_facilities . $e_content;
 
-    mail($address, $e_subject, $msg, "From: $email\r\nReply-To: $email\r\nReturn-Path: $email\r\n");
+    mail($address, $e_subject, $msg, "From: no-reply@l2tmedia.com\r\nReply-To: no-reply@l2tmedia.com\r\nReturn-Path: bzawlocki@l2tmedia.com\r\n");
 					
 	$submissionConfirm =
 		

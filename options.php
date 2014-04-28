@@ -356,7 +356,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'name' => __('Form Emails', 'options_check'),
-		'desc' => __('Enter the emails that the form sends too. Seperate emails by semi-colons ( ; )', 'options_check'),
+		'desc' => __('Enter the emails that the form sends too. Seperate emails by commas ( , )', 'options_check'),
 		'id' => 'form_emails',
 		'std' => 'sendformto@dealer.com',
 		'type' => 'text');

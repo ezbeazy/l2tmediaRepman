@@ -39,7 +39,7 @@ function twentyfourteen_custom_header_setup() {
 		'default-text-color'     => 'fff',
 		'width'                  => 640,
 		'height'                 => 135,
-		'flex-height'            => true,
+		'flex-height'            => false,
 		'wp-head-callback'       => 'twentyfourteen_header_style',
 		'admin-head-callback'    => 'twentyfourteen_admin_header_style',
 		'admin-preview-callback' => 'twentyfourteen_admin_header_image',
